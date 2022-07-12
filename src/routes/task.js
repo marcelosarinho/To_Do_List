@@ -1,12 +1,8 @@
 const express = require("express");
-
 const checklistDepedentRoute = express.Router();
 const simpleRouter = express.Router();
-
 const Checklist = require("../models/checklist");
 const Task = require("../models/task");
-
-
 
 checklistDepedentRoute.get("/:id/tasks/new", async (req, res) => {
     try {
@@ -33,7 +29,6 @@ simpleRouter.delete("/:id", async (req, res) => {
 checklistDepedentRoute.post("/:id/tasks", async (req, res) => {
     let { name } = req.body.task;
     let task = new Task({ name, checklist: req.params.id });
-
     try {
         await task.save();
         let checklist = await Checklist.findById(req.params.id);

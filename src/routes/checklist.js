@@ -1,7 +1,5 @@
 const express = require("express");
-
 const router = express.Router();
-
 const Checklist = require("../models/checklist");
 
 router.get("/", async (req, res) => {
@@ -34,7 +32,6 @@ router.get("/:id/edit", async (req, res) => {
 router.post("/", async (req, res) => {
     let { name } = req.body.checklist;
     let checklist = new Checklist({ name })
-
     try {
         await checklist.save();
         res.redirect("/checklists");
@@ -55,13 +52,12 @@ router.get("/:id", async (req, res) => {
 router.put("/:id", async (req, res) => {
     let { name } = req.body.checklist;
     let checklist = await Checklist.findById(req.params.id);
-
     try {
         await checklist.update({ name });
         res.redirect("/checklists");
     } catch (error) {
         let errors = error.errors;
-        res.status(422).render("checklists/edit", {checklist: {...checklist, errors}});
+        res.status(422).render("checklists/edit", { checklist: { ...checklist, errors } });
     }
 })
 

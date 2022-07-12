@@ -1,7 +1,5 @@
 <%- include("../layouts/header", {title: checklist.name}) %>
-
     <%- include("../layouts/menu") %>
-
         <section class="section">
             <div class="container">
                 <div class="columns">
@@ -16,9 +14,7 @@
                         <a href="/checklists" class="button is-small">Voltar</a>
                     </div>
                 </div>
-
                 <hr />
-
                 <% checklist.tasks.forEach(task=> { %>
                     <div class="columns">
                         <div class="column is-four-fifths <%= task.done ? 'has-text-success is-italic' : '' %> ">
@@ -26,16 +22,12 @@
                                 ? 'checked' : '' %>
                             /> <%= task.name %>
                         </div>
-
                         <div class="column is-one-fifth">
                             <a href="/tasks/<%= task._id %>?_method=delete"
                                 class="button is-danger is-small">Remover</a>
                         </div>
                     </div>
                     <% }) %>
-
-
             </div>
         </section>
-
         <%- include("../layouts/footer") %>
