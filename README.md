@@ -2,9 +2,9 @@
 <p align="center">Esse site é uma To Do List, realizado no curso Programador Full Stack JavaScript Profissional, da OneBitCode.</p>
 </br>
 <p align="center">
-<a href="https://github.com/marcelosarinho/projeto_clone_spacex/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/marcelosarinho/projeto_clone_spacex?style=flat-square"></a>
-<a href="https://github.com/marcelosarinho/projeto_clone_spacex/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/marcelosarinho/projeto_clone_spacex?style=flat-square"></a>
-<a href="https://github.com/marcelosarinho/projeto_clone_spacex/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/marcelosarinho/projeto_clone_spacex?style=social"></a>
+<a href="https://github.com/marcelosarinho/toDoList/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/marcelosarinho/toDoList?style=flat-square"></a>
+<a href="https://github.com/marcelosarinho/toDoList/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/marcelosarinho/toDoList?style=flat-square"></a>
+<a href="https://github.com/marcelosarinho/toDoList/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/marcelosarinho/toDoList?style=social"></a>
 </p>
 <p align="center">
 <a href="#sobre">Sobre</a> • 
@@ -22,33 +22,36 @@
   </h3>
   <br/>
   <h3 align="center">
-   <img src="./screenshots/falcon9.png"/>
+   <img src="./screenshots/list.png"/>
   </h3>
   <br/>
   <h3 align="center">
-   <img src="./screenshots/humanSpaceFlight.png"/>
+   <img src="./screenshots/task.png"/>
   </h3>
 </div>
 <h2 id="sobre">📖 Sobre</h2>
-<p>Esse repositório é um clone do site da SpaceX, e foi realizado no curso Programador Full Stack JavaScript Profissional, da OneBitCode. Ele não possui a parte de JavaScript, sendo, portanto, um projeto que serve de prática para HTML, CSS, SASS e Bootstrap.</p>
+<p>Esse repositório é um To Do List, realizado no curso Programador Full Stack JavaScript Profissional, da OneBitCode. O projeto foi criado com o intuito de aprender mais sobre o Back End das aplicações web, utilizando Express, Mongoose, EJS.</p>
 <h2 id="pre-requisitos">📋 Pré-Requisitos</h2>
 <p>Para testar essa aplicação, é necessário <a href="https://git-scm.com/">Git</a> e <a href="https://www.npmjs.com/">npm</a> (ou <a href="https://yarnpkg.com/">Yarn</a>).</p>
 <p>Caso queira testar o projeto na sua máquina, siga esses passos:</p>
 
 ```bash
 # Clone o repositório
-$ git clone <https://github.com/marcelosarinho/portfolio>
+$ git clone <https://github.com/marcelosarinho/toDoList>
 
 # Acesse a pasta do projeto clonado
-$ cd portfolio
+$ cd toDoList
 
 # Instale as dependências necessárias para o projeto
 $ npm install
 
 # Execute o comando
-$ npm start
+$ nodemon start
 
-# O site aparecerá automaticamente, caso não apareça acesse <http://localhost:3000/>
+# Caso o comando anterior não funcione, execute esse
+$ npm run dev
+
+# Em seguida, acesse <http://localhost:3000/>
 
 ```
 
@@ -56,13 +59,19 @@ $ npm start
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 <br/>
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+<a href="https://bulma.io/">![Bulma](https://img.shields.io/badge/bulma-00D0B1?style=for-the-badge&logo=bulma&logoColor=white)</a>
 <br/>
-<a href="https://getbootstrap.com/">![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)</a>
+<a href="http://expressjs.com/pt-br/">![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)</a>
 <br/>
-<a href="https://sass-lang.com/">![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)</a>
+<a href="https://www.mongodb.com/">![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)</a>
 <br/>
-<a href="https://michalsnik.github.io/aos/">• AOS</a>
+<a href="https://ejs.co/">• EJS</a>
+<br/>
+<a href="https://www.npmjs.com/package/method-override">• Method Override</a>
+<br/>
+<a href="https://www.npmjs.com/package/nodemon">• Nodemon</a>
+<br/>
+<a href="https://mongoosejs.com/">• Mongoose</a>
 <h2 id="licenca">📜 Licença</h2>
 Esse projeto utiliza a Licença MIT.
 <h2 id="autor">👨‍💻 Autor</h2>
