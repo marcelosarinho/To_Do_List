@@ -65,6 +65,8 @@ $ npm run dev
 <br/>
 <a href="https://www.mongodb.com/">![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)</a>
 <br/>
+<a href="https://www.javascript.com/">![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)</a>
+<br/>
 <a href="https://ejs.co/">• EJS</a>
 <br/>
 <a href="https://www.npmjs.com/package/method-override">• Method Override</a>
